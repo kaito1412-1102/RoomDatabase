@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PetActivity">
+
+    <TextView
+        android:id="@+id/txt_name_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a" />
+
+    <EditText
+        android:id="@+id/edt_name_pet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_name_user"
+        android:hint="jojo" />
+
+    <EditText
+        android:id="@+id/edt_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_name_pet"
+        android:hint="dog" />
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_type"
+        android:text="insert" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_pet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_insert" />
+</RelativeLayout>
